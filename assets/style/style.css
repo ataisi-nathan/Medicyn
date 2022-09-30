@@ -14,13 +14,24 @@ body {
 }
 
 header {
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     height: 10vh;
     width: 100%;
-    padding: 10px 30px;
+    padding: 10px 70px;
     color: #fff;
+    z-index: 5;
+
+   /* From https://css.glass */
+   background: rgba(124, 115, 155, 0.34);
+   border-radius: 1px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(13.3px);
+   -webkit-backdrop-filter: blur(13.3px);
+   border: 1px solid rgba(124, 115, 155, 0.48);
 }
 
 .logo {
@@ -29,4 +40,111 @@ header {
     justify-content: space-evenly;
     align-items: center;
     width: 200px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 5px 5px;
+    margin: 0 5px;
+    font-size: 1.17em;
+    cursor: pointer;
+}
+
+ul li a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.download-button {
+    background-color: #fff;
+    color: blueviolet;
+    border-radius: 5px;
+}
+
+main {
+    margin: 0 80px;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100%;
+}
+
+.left {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 9em;
+    width: 14em; 
+    font-size: 2em;
+    left: 20px;
+    top: 13em;
+}
+
+.left p {
+    font-size: 0.6em;
+}
+
+.buttons {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: blueviolet;
+    font-size: 0.8em;
+}
+
+.center {
+    position: absolute;
+}
+.center img {
+    width: 60em;
+}
+
+.right {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 20px;
+    top: 12em;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: blueviolet;
+    padding: 10px;
+    margin: 8px;
+    height: 8em;
+    width: 8em;
+    border-radius: 5px;
+}
+
+.value {
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.value-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
 }
