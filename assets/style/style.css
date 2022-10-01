@@ -5,12 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
-}
-
-body {
-    background-image: url(../images/background1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    cursor: default;
 }
 
 header {
@@ -69,19 +64,24 @@ ul li a {
     border-radius: 5px;
 }
 
-main {
+/* main {
     margin: 0 80px;
     color: #fff;
-}
+} */
 
 .container {
+    background-image: url(../images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-end;
-    height: 100vh;
+    height: 96vh;
     width: 100%;
+    padding: 0 80px;
 }
 
 .left {
@@ -92,8 +92,8 @@ main {
     height: 9em;
     width: 14em; 
     font-size: 2em;
-    left: 20px;
-    top: 13em;
+    left: 80px;
+    top: 10em;
 }
 
 .left p {
@@ -110,16 +110,18 @@ main {
 
 .center {
     position: absolute;
+    top: 80px
 }
 .center img {
     width: 60em;
+    z-index: 2;
 }
 
 .right {
     position: absolute;
     display: flex;
     flex-direction: column;
-    right: 20px;
+    right: 80px;
     top: 12em;
 }
 
@@ -147,4 +149,55 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 1em;
+}
+
+.container2 {
+    position: relative;
+    background-color: rgb(246, 233, 233);
+    height: 10vh;
+    width: 100vw;
+    /* padding: 10px; */
+    padding: 0 80px;
+    z-index: 5;
+    color: blueviolet;
+}
+
+.book-appointment {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: -60px;
+    background-color: #fff;
+    height: 15vh;
+    padding: 10px 30px;
+    width: 88vw;
+    left: 80px;
+}
+
+.book-appointment form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.book-appointment input, select {
+    width:30em;
+    height: 40px;
+    margin-right: 30px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.book-appointment button {
+    width: 160px;
+    height: 40px;
+    background-color: blue;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 1em;
+    cursor: pointer;
 }
