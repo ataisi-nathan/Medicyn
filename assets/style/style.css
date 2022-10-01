@@ -97,12 +97,24 @@ ul li a {
     font-size: 0.6em;
 }
 
+.left div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
 .buttons {
     background-color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    color: blueviolet;
-    font-size: 0.8em;
+    padding: 8px;
+    border-radius: 3px;
+    color: blue;
+    font-size: 0.6em;
+    font-weight: 500;
+    margin-right: 30px;
+    width: 7em;
+    text-align: center;
+    
 }
 
 .center {
@@ -121,6 +133,7 @@ ul li a {
     right: 80px;
     top: 12em;
     cursor: default;
+    text-align: center;
 }
 
 .box {
