@@ -298,19 +298,32 @@ ul li a {
     padding: 10px;
 }
 
-.right-side input::-webkit-input-placeholder { 
+.right-side ::-webkit-input-placeholder { 
     font-family: FontAwesome;
     font-weight: normal;
     overflow: visible;
     vertical-align: top;
     display: inline-block !important;
-    padding-left: 5px;
-    padding-top: 2px;
     color: hsl(12, 63%, 3%);
-    }
+}
 
 .right-side form{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.right-side button{
+    position: absolute;
+    right: 30%;
+    bottom: -15%;
+    width: 40%;
+    align-items: center;
+    border-radius: 25px;
+    height: 2.7em;
+    border: none;
+    color: #fff;
+    background-color: rgb(50, 50, 97);
+    cursor: pointer;
 }
