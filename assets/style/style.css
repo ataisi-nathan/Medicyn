@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Merriweather', serif;
+}
+
+.hide {
+    visibility: hidden;
 }
 
 header {
@@ -20,12 +25,12 @@ header {
     z-index: 5;
 
    /* From https://css.glass */
-   background: rgba(124, 115, 155, 0.34);
+   background: rgba(23, 3, 96, 0.7);
    border-radius: 1px;
    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
    backdrop-filter: blur(13.3px);
    -webkit-backdrop-filter: blur(13.3px);
-   border: 1px solid rgba(124, 115, 155, 0.48);
+   border: 1px solid rgba(23, 3, 96, 0.7);
 }
 
 .logo {
@@ -63,6 +68,7 @@ ul li a {
     background-color: #fff;
     color: blueviolet;
     border-radius: 3px;
+    padding: 5px;
 }
 
 .container {
@@ -105,16 +111,22 @@ ul li a {
 }
 
 .buttons {
-    background-color: #fff;
+    background-color: transparent;
     padding: 8px;
-    border-radius: 3px;
-    color: blue;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    color: #fff;
     font-size: 0.6em;
     font-weight: 500;
     margin-right: 30px;
     width: 7em;
     text-align: center;
-    
+}
+.buttons:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: rgb(52, 26, 112);
+    transition: ease 300ms;
 }
 
 .center {
@@ -212,4 +224,93 @@ ul li a {
     border-radius: 3px;
     font-size: 1em;
     cursor: pointer;
+}
+
+/* This style is for the login page and signup page */
+.register {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    padding-top: 10vh;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 50, 97);
+    width: 50%;
+    color: #fff;
+    font-size: 1.4em;
+    padding: 50px;
+}
+
+.left-side p{
+    margin: 20px 0;
+    width: 23em;
+}
+
+.buttonsign {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color: rgb(50, 50, 97);
+    font-weight: 500;
+    cursor: pointer;
+    width: 5.5em;
+    height: 1.6em;
+    /* text-align: center; */
+    align-items: center;
+    border-radius: 25px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 50%;
+    font-size: 1.4em;
+    padding: 30px;
+}
+
+.right-side svg {
+    height: 20px;
+    width: 20px;
+    opacity: 0.4;
+    margin-right: 10px;
+}
+
+.right-side h1 {
+    margin-bottom: 20px;
+}
+
+.right-side input {
+    border: 1px solid transparent;
+    background-color: aquamarine;
+    height: 2.4em;
+    width: 30em;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.right-side input::-webkit-input-placeholder { 
+    font-family: FontAwesome;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-left: 5px;
+    padding-top: 2px;
+    color: hsl(12, 63%, 3%);
+    }
+
+.right-side form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
